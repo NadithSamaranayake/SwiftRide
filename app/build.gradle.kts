@@ -37,6 +37,10 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    // Add osmdroid library
+    implementation(libs.osmdroid)
+    // Add Google Play Services Location library
+    implementation("com.google.android.gms:play-services-location:18.0.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
