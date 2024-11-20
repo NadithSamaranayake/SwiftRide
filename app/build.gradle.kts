@@ -39,6 +39,8 @@ dependencies {
     implementation(libs.constraintlayout)
     // Add osmdroid library
     implementation(libs.osmdroid)
+    //Material library
+    implementation ("com.google.android.material:material:1.9.0")
     // Add Google Play Services Location library
     implementation("com.google.android.gms:play-services-location:18.0.0")
     testImplementation(libs.junit)

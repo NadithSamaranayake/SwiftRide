@@ -5,4 +5,22 @@
         <item>Passenger</item>
         <item>Owner</item>
     </string-array>
+    <string-array name="routes">
+        <item>Negombo to Colombo</item>
+        <item>Kandana to Ja-Ela</item>
+        <item>Colombo to Chilaw</item>
+        <item>Colombo to Jaffna</item>
+    </string-array>
+    <string-array name="departure_time">
+        <item>10:00 AM</item>
+        <item>11:00 AM</item>
+        <item>12:00 PM</item>
+        <item>01:00 PM</item>
+    </string-array>
+    <string-array name="busses">
+        <item>AB001</item>
+        <item>AB002</item>
+        <item>AB003</item>
+        <item>AB004</item>
+    </string-array>
 </resources>

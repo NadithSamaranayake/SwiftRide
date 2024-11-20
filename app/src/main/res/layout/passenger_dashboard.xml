@@ -17,21 +17,60 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="Name"
+            android:layout_weight="8"
+            android:text="Find Busses Near You"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="28sp"/>
     </LinearLayout>
+
+    <!--Bookings-->
+    <TableLayout
+        android:id="@+id/bus_bookings_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="8dp"
+        android:layout_below="@id/mapLayout"
+        android:layout_marginTop="16dp">
+
+        <!-- Table header -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus Number"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seat Number"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departure Time"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
 
     <!--Map View-->
     <LinearLayout
+        android:id="@+id/mapLayout"
         android:layout_width="match_parent"
-        android:layout_height="1000px"
+        android:layout_height="250dp"
         android:orientation="vertical"
         android:padding="24dp"
-        android:layout_marginTop="720px"
+        android:layout_marginTop="170dp"
         android:elevation="8dp"
         android:layout_gravity="center"
         android:layout_marginBottom="32dp"
@@ -45,6 +84,38 @@
 
     </LinearLayout>
 
+    <!--Table View-->
+    <!-- Table Layout for displaying bus info -->
+    <TableLayout
+        android:id="@+id/bus_info_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="8dp"
+        android:layout_below="@id/mapLayout"
+        android:layout_marginTop="16dp">
+
+        <!-- Table header -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus Number"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departure Time"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
 
     <!-- Bottom Button Bar -->
     <LinearLayout
@@ -53,36 +124,57 @@
         android:orientation="horizontal"
         android:weightSum="4"
         android:padding="8dp"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:background="@color/navbg">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Home" />
+            android:text="Home"
+            android:textColor="@color/white"
+            android:icon="@drawable/ic_home"
+            android:iconTint="@color/white"
+            android:backgroundTint="@color/primaryColor"
+             />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Search" />
+            android:text="Search"
+            android:textColor="@color/white"
+            android:icon="@drawable/ic_search"
+            android:iconTint="@color/white"
+            android:backgroundTint="@color/primaryColor"
+            />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Book" />
+            android:text="Book"
+            android:textColor="@color/white"
+            android:icon="@drawable/ic_book"
+            android:iconTint="@color/white"
+            android:backgroundTint="@color/primaryColor"
+            />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Profile" />
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:icon="@drawable/ic_profile"
+            android:iconTint="@color/white"
+            android:backgroundTint="@color/primaryColor" />
 
     </LinearLayout>
+
 
 </RelativeLayout>
